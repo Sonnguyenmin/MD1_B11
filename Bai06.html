@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Chỉ số khối cơ thể (Body mass index-BMI) là một thước đo sức khoẻ dựa trên cânnặng và chiều cao.
+        // Nó được tính bằng cách lấy cân nặng đơn vị tính kilogam chia cho bình phương của chiều cao đơn vị tính mét. 
+
+        let height = +prompt('Mời bạn nhập chiều cao:');
+        let weight = +prompt('Mời bạn nhập cân nặng:');
+        let bmi = weight / ( height ** 2 );
+
+        if (bmi < 18.5) {
+            alert('Bạn thiếu cân');
+        }
+        else if(18.5 <= bmi && bmi <= 24.9){
+            alert('Bạn bình thường');
+        }
+        else if(25 <= bmi && bmi <= 29.9){
+            alert('Bạn béo');
+        }
+        else if(30 <= bmi && bmi <= 39.9){
+            alert('Bạn béo phì');
+        }
+        else if(bmi >= 40){
+            alert('Bạn rất béo phì');
+        }
+    </script>
+</body>
+</html>
